@@ -32,8 +32,8 @@ now = datetime.now(ZoneInfo("Asia/Seoul"))
 
 # 2. 텔레그램 메시지 전송 함수
 def send_telegram_message(text):
-    token = os.environ.get(8617806385:AAFu8KXqZ6m7eCz_N0Oi5Ro355Qw5t5lAXo)
-    chat_id = os.environ.get(8515513433)
+    token = os.environ.get("TELEGRAM_TOKEN")
+    chat_id = os.environ.get("TELEGRAM_CHAT_ID")
     
     if not token or not chat_id:
         print("텔레그램 토큰이나 CHAT_ID가 설정되지 않았습니다.")
